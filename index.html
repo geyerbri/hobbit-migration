@@ -785,7 +785,7 @@
 			locations1.on('layeradd', function(e) {
 				var marker = e.layer,
 				feature = marker.feature;
-				marker.setIcon(L.icon(feature.properties.icon));
+//				marker.setIcon(L.icon(feature.properties.icon));
 				var content = "<div style='clear: both'></div><div style='float: left; padding: 5px; margin-right: 10px'><img style='width: 200px;' src=" + feature.properties.image + " /></div><div float: right><span class='pop'><a target='_blank' href='" + feature.properties.url + "'>" + feature.properties.title + "</a><br>" + feature.properties.description + "</p></span></div><div style='clear: both'></div>";
 				marker.bindPopup(content, {minWidth: 400, autoPanPadding: [10,80], closeButton: true});
 			});
